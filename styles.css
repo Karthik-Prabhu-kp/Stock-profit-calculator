@@ -23,7 +23,7 @@ body{
 }
 
 :root{
-    --purple:rgba(87, 185, 250, 0.938);
+    --purple:rgba(99, 178, 243, 0.952);
     --green-transparent: rgba(71, 233, 84, 0.80);
     --red-transparent: rgba(250, 31, 31, 0.80);
 }
@@ -51,6 +51,7 @@ body{
 }
 
 .heading{
+    padding: 0.5rem;
 
 }
 
