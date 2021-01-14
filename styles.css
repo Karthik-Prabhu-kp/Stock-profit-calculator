@@ -1,4 +1,80 @@
-#btn {
-    padding: 1rem;
-    border-radius: 1rem;
+import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+body,html{
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url(images/pexels-lorenzo-241544.jpg);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+:root{
+    --purple:rgba(87, 185, 250, 0.938);
+    --green-transparent: rgba(71, 233, 84, 0.80);
+    --red-transparent: rgba(250, 31, 31, 0.80);
+}
+
+#container{
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border-radius:  1rem;
+    border:1px solid black;
+    margin:auto;
+    margin-top: 5rem;
+    max-width: 700px;
+    background-color: var(--purple);
+    transition: 1s;
+}
+
+#btn{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    display: block;
+    font-weight: bold;
+    background-color: #9CA3AF;
+}
+
+.heading{
+
+}
+
+.text{
+    padding:0.5rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.input{
+    max-width: 40%;
+    max-height: 6vh;
+    border-radius: 0.35rem;
+    background-color: #D1D5DB;
+    text-align: center;
+}
+#qty{
+    margin-bottom: 1rem;
+}
+
+#out{
+    font-style: italic;
+    margin-top: 1rem;
+    font-weight: bolder;
 }

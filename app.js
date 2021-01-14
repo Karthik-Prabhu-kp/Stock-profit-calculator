@@ -19,13 +19,15 @@ function outputHandler(){
     var percentage = ( diffrence/totalBuyPrice )*100
 
     if (diffrence > 0 ){
-        outputDiv.innerText = "$"+diffrence+" profit | Profit percentage :"+percentage+"%"
+        outputDiv.innerText = "$"+diffrence.toFixed(2)+" profit | Profit percentage :"+percentage.toFixed(2)+"%\nCurrent price:"+stockValue+"$"
+        document.querySelector("#container").style.backgroundColor= "var(--green-transparent)";
     }
     else if (diffrence == 0){
         outputDiv.innerText = "No profit or loss"
     }
     else{
-        outputDiv.innerText = "$"+Math.abs(diffrence)+"Loss | Loss percentage :"+Math.abs(percentage)+"% "
+        outputDiv.innerText = "$"+Math.abs(diffrence.toFixed(2))+" Loss | Loss percentage :"+Math.abs(percentage.toFixed(2))+"%\nCurrent price:"+stockValue+"$"
+        document.querySelector("#container").style.backgroundColor= "var(--red-transparent)";
     }
 }
 
@@ -47,10 +49,10 @@ function clickHandler(){
     .then(response => response.json())
     .then(json => {
         quote = json["Global Quote"];
-        stockValue = quote["05. price"]
+        stockValue = quote["05. price"];
     })
-    // .then(run => {profitCheck(price.value,Qty.value);})
-    function profitCheck(price.value,Qty.value)
+    .then(run => {profitCheck(price.value,Qty.value);})
+    
     
 }
 
